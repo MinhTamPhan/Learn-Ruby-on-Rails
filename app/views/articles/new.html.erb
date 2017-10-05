@@ -1,4 +1,4 @@
-<h1>New Article</h1>
+<h1 >New Article</h1>
 <%= form_with scope: :article, url: articles_path, local: true do |form| %>
   <p>
     <%= form.label :title %><br>
@@ -11,6 +11,7 @@
   </p>
  
   <p>
-    <%= form.submit %>
+    <%= form.submit :class => 'btn btn-primary' %>
   </p>
+<button type = 'button' id = 'btn-submit'> text </text>
 <% end %>
